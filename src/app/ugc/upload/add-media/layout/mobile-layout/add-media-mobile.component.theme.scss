@@ -1,0 +1,19 @@
+@import '../../../../../../styles/burst-theme';
+@import '../../../../../../styles/burst-responsive';
+
+@mixin add-media-mobile-theme($theme) {
+  $primaryPalette: burst-theme-palette($theme);
+  $primaryText: burst-theme-palette-text($primaryPalette);
+  
+  .upload-media-title {
+    @include burst-responsive-mobile() {
+      color: $primaryText;
+    }
+  }
+  .media-title {
+    color: $primaryText;
+  }
+  .media-note-text {
+    color: $primaryText;
+  }
+}

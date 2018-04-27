@@ -1,0 +1,15 @@
+@import './layout/desktop-layout/add-media-desktop.component.theme';
+@import './layout/mobile-layout/add-media-mobile.component.theme';
+@import './shared/navigation/navigation-link.component.theme';
+@import './shared/next-button/next-button.component.theme';
+@import './shared/media-adder/media-adder.component.theme';
+@import './shared/add-media-prompt/add-media-prompt.component.theme';
+
+@mixin add-media-component-themes($theme) {
+  @include add-media-desktop-theme($theme);
+  @include add-media-mobile-theme($theme);
+  @include navigation-link-theme($theme);
+  @include next-button-theme($theme);
+  @include media-adder-control-theme($theme);
+  @include add-media-prompt-theme($theme);
+}

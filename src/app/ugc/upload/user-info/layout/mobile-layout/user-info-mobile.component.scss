@@ -1,0 +1,128 @@
+$url_0: url(../../../../../../assets/img/ico-bg-mobile-banner.png);
+.add-media-txt {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 28px;
+  color: #FFFFFF;
+  >span {
+    position: relative;
+    top: -23px;
+    left: 20px;
+  }
+  >img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+}
+
+.media-limit-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+
+.user-info-div {
+  height: 100vh;
+  background: $url_0;
+  background-size: cover;
+}
+
+.user-info {
+  margin-top: 25px;
+  color: #FFFFFF;
+  margin-left: 13.5%;
+  position: relative;
+  >input {
+    width: 290px;
+  }
+}
+
+.tc {
+  color: #FFFFFF;
+  margin-top: 46px;
+  font-size: 14px;
+  margin-left: 13.5%;
+
+  .tc-error {
+    color: #ff7e73 !important;
+  }
+  .tc-text {
+      float: left;
+      margin-top: 3px;
+  }
+  input[type=checkbox] {
+    float: left;
+    width: 17px;
+    height: 17px;
+  }
+  >div span:last-child {
+    color: #FFFFFF;
+    font-size: 18px;
+    float: left;
+  }
+}
+
+.upload-btn {
+  width: 280px;
+  height: 40px;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.placeholder-text {
+  top: 10px;
+}
+
+.required-text {
+  font-size: 13px;
+}
+
+.upload-div {
+  margin-top: 15px;
+}
+
+.page-progress-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+input[type=text] {
+  font-size: 15px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+input[type=text]:focus {
+  outline: none;
+}
+
+
+/* LABEL ======================================= */
+
+label {
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+
+/* active state */
+
+input[type=text]:focus~label,
+input[type=text]:valid~label {
+  top: -9px;
+  font-size: 10px;
+  color: #FFFFFF;
+}

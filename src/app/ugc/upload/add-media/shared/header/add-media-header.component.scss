@@ -1,0 +1,29 @@
+@import '../../../../../../styles/burst-responsive';
+@import '../../../../../../styles/burst-text';
+$titleTextSize: burst-text-get-size($textSizesMed, xl);
+.add-media-header {
+  text-align: center;
+  .header-title-text {
+    @include burst-responsive-mobile() {
+      display: inline-block;
+      position: absolute;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.primary-logo-image {
+  width: 50px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.logo {
+  @include burst-responsive-desktop() {
+    display: none;
+  }
+  @include burst-responsive-mobile() {
+    display: inline-block;
+  }
+}

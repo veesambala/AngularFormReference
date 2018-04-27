@@ -1,0 +1,46 @@
+@import '../../../../styles/burst-theme';
+
+@mixin ugc-shared-desktop-background-theme($theme) {
+  $primaryPalette: burst-theme-palette($theme);
+  $primaryLightColor: burst-theme-palette-color($primaryPalette, light);
+  $primaryDarkColor: burst-theme-palette-color($primaryPalette, dark);
+  $primaryTextColor: burst-theme-palette-text($primaryPalette, dis);
+  $secondaryPalette: burst-theme-palette($theme, sec);
+  $secondaryColor: burst-theme-palette-color($secondaryPalette);
+  $tertiaryPalette: burst-theme-palette($theme, ter);
+  $tertiaryColor: burst-theme-palette-color($tertiaryPalette);
+  $foregroundPalette: burst-theme-palette($theme, fg);
+  $foregroundColor: burst-theme-palette-color($foregroundPalette);
+
+  .desktop-background {
+    background-color: $foregroundColor;
+
+    .arc {
+      .gradient {
+        background: radial-gradient(#{$primaryLightColor}, #{$primaryDarkColor});
+      }
+
+      .shape {
+        background-color: $foregroundColor;
+      }
+      
+      .icons {
+        .alt-accent {
+          fill: $tertiaryColor;
+        }
+        
+        .accent {
+          fill: $secondaryColor;
+        }
+
+        .light-grey {
+          fill: rgba($primaryTextColor, 0.7);
+        }
+
+        .dark-grey {
+          fill: rgba($primaryTextColor, 0.5);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../../../../../styles/burst-theme';
+@import '../../../../../../styles/burst-responsive';
+
+@mixin add-media-desktop-theme($theme) {
+  $foregroundPalette: burst-theme-palette($theme, fg);
+  $foregroundColor: burst-theme-palette-color($foregroundPalette);
+  $foregroundText: burst-theme-palette-text($foregroundPalette, ter);
+  $secondaryPalette: burst-theme-palette($theme, sec);
+  $secondaryColor: burst-theme-palette-color($secondaryPalette);
+  $secondaryText: burst-theme-palette-text($secondaryPalette);
+  
+  .upload-page-desktop {
+    background-color: $foregroundColor;
+  }
+  @include burst-responsive-md-xl() {
+    .upload-media-title {
+      color: $foregroundText;
+    }
+    .add-media-btn {
+      border-color: $secondaryColor !important;
+    }
+    .upload-cancel-txt {
+      color: $secondaryColor;
+    }
+  }
+   .upload-media-info {
+    color: $foregroundText;
+    >input {
+      color: $foregroundText;
+    }
+  }
+
+
+
+}

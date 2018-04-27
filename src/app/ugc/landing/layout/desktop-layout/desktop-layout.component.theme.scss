@@ -1,0 +1,10 @@
+@import '../../../../../styles/burst-theme';
+
+@mixin landing-desktop-layout-theme($theme) {
+  $foregroundPalette: burst-theme-palette($theme, fg);
+  $foregroundColor: burst-theme-palette-color($foregroundPalette);
+
+  .desktop-layout {
+    background-color: $foregroundColor;
+  }
+}

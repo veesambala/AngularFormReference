@@ -1,0 +1,34 @@
+<div class="add-media-div upload-success-mob">
+  <div class="ico-success">
+    <img src="assets/img/burst-theme-mobile.svg" (load)="onImageLoaded($event)" (error)="onImageError($event)">
+    <img class="success" src="assets/img/ico-upload-success-mobile.svg" (load)="onImageLoaded($event)" (error)="onImageError($event)">
+  </div>
+  <div class="media-note">
+    <div class="text-center media-note-text ">Your Media has </div>
+    <div class="text-center media-note-text">been sucessfully Uploaded! </div>
+  </div>
+  <div class="media-note">
+    <div class="text-center media-note-text">Share your Media </div>
+  </div>
+  <div class="share">
+    <button class="facebook">
+      <img class="icon"src="assets/img/fbIcon.svg" (load)="onImageLoaded($event)" (error)="onImageError($event)">
+      <div class="share-icon-text">Facebook</div>
+    </button>
+    <button class="twitter">
+      <img  class="icon" src="assets/img/twittericon.svg" (load)="onImageLoaded($event)" (error)="onImageError($event)">
+      <div class="share-icon-text">Twitter</div>
+    </button>
+  </div>
+  <div>
+    <div class="hr-line"></div>
+    <input class="add-more " type="button" value="ADD MORE" (click) = 'addMedia()'>
+    <input class="finished burst-theme-accent-bg" type="button" value="FINISHED">
+    <input class="media burst-theme-accent-bg" type="button" value="YOUR MEDIA">
+  </div>
+  <div class="note">
+    <div class="media-note-text">Having Trouble?
+      <span><a href="">Send Us an email</a></span>
+    </div>
+  </div>
+</div>

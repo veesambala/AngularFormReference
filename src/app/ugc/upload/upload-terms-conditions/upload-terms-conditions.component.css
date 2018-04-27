@@ -1,0 +1,29 @@
+
+.upload-div,.right-content{
+    width:49%;
+    display: inline-block;
+}
+
+.right-content{
+    position: absolute;
+    height: 100%;
+    right: 0px;
+}
+.upload-page-desktop{
+    min-width: 1280px;
+}
+.tc-text{
+    font-size: 28px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+}
+.tc-div{
+    width: 500px;
+    height: 300px;
+    border: 1px solid #4D4D4D;
+    margin-left: 50px;
+    overflow: auto;
+    padding:20px;
+    margin-bottom: 50px;
+}

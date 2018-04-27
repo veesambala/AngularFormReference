@@ -1,0 +1,33 @@
+
+<div  class='upload-page-desktop' >
+    <div class="upload-div">
+        <img class="success-img" (load)="onImageLoaded($event)"
+        (error)="onImageError($event)" src="assets/img/ico-success-media.png" >
+        <div class="success-text">
+            <span>Your media has</span><br>
+            <span> been successfully uploaded!</span>
+        </div>
+        <div>
+            <a class="add-more-btn" (click) = 'addMedia()'>
+                    <span>ADD MORE</span>
+            </a>
+    </div>
+    <div class="back-btn">
+        <a >FINISHED</a>
+        <a>VIEW YOUR MEDIA</a>
+     </div>
+     <div class="social-div">
+         <span>Share your media</span>
+     </div>
+     <div class="social-icons">
+        <img class="social-fb" (load)="onImageLoaded($event)"
+        (error)="onImageError($event)" src="assets/img/ico-fb.svg">
+        <img class="social-twitter" (load)="onImageLoaded($event)"
+        (error)="onImageError($event)" src="assets/img/ico-tw.svg">
+     </div>
+    </div>
+
+    <div class="right-content">
+        <ugc-desktop-right></ugc-desktop-right>
+    </div>
+</div>

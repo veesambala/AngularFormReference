@@ -1,0 +1,30 @@
+@import '../../../../../styles/burst-theme';
+@import '../../../../../styles/burst-responsive';
+
+@mixin ugc-shared-submission-prompt-theme($theme) {
+  $primaryPalette: burst-theme-palette($theme);
+  $primaryText: burst-theme-palette-text($primaryPalette);
+  $secondaryPalette: burst-theme-palette($theme, sec);
+  $secondaryColor: burst-theme-palette-color($secondaryPalette);
+  $secondaryText: burst-theme-palette-text($secondaryPalette);
+  $foregroundPalette: burst-theme-palette($theme, fg);
+  $foregroundText: burst-theme-palette-text($foregroundPalette, ter);
+
+  .submission-prompt-layout {
+    @include burst-responsive-xs-sm() {
+      .media-title {
+        color: $primaryText;
+      }      
+    }
+    @include burst-responsive-md-xl() {
+      .media-title {
+        color: $foregroundText;
+      }      
+    }    
+
+    .banner-text {
+      background: $secondaryColor;
+      color: $secondaryText;
+    }
+  }
+}

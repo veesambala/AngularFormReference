@@ -1,0 +1,42 @@
+<div class='upload-page-desktop'>
+  <ugc-desktop-right></ugc-desktop-right>
+  <div class="upload-div">
+    <div class="upload-body">
+      <div class="upload-media-title" [ngClass]='{"without-media": mediaState === "NO_MEDIA_SELECTED"}'>
+        <add-media-header></add-media-header>
+      </div>
+      <div class="media-limit-text" *ngIf="mediaState === 'NO_MEDIA_SELECTED'">
+          <add-media-prompt></add-media-prompt>
+      </div>
+      <div class="media-preview-container" *ngIf="showPreview">
+        <div *ngFor="let file of filesList; let idx = index; " class="media-item">
+          <ugc-preview [mediaFileObject]="file" [fileIndex]="idx" (evEmitterForRemovingFiles)="fileRemoved($event)"></ugc-preview>
+        </div>
+        <p class="clear"></p>
+      </div>
+      <div class="upload-input-container">
+        <!-- <media-adder [selectedFileCount]="filesList.length" (onFileSelected)="fileSelected($event)"></media-adder> -->
+      </div>
+      <div class="upload-details" *ngIf="mediaState !== 'NO_MEDIA_SELECTED'">
+        <div class="upload-media-info">
+          <span>{{mediaTitleText}}</span><br>
+          <input type="text" [(ngModel)]='mediaTitle' placeholder="{{mediaTitleText}}">
+        </div>
+        <div class="next-button-container">
+          <next-button (onUploadSelected)="handleNext()"></next-button>
+        </div>
+        <div class="navigation-link-container">
+          <navigation-link (onBackButtonClicked)="uploadCancelled()" (onCancelButtonClicked)="uploadCancelled()"></navigation-link>
+        </div>
+      </div>
+
+
+      <div class="upload-cancel-txt" *ngIf="mediaState === 'NO_MEDIA_SELECTED'">
+        <a (click)="uploadCancelled()"> {{cancelButtonText}} </a>
+      </div>
+      <div class="page-progress-container" [ngClass]='{"progress-without-media": mediaState === "NO_MEDIA_SELECTED"}'>
+        <ugc-page-progress [progressPercent]='pageProgress'></ugc-page-progress>
+      </div>
+    </div>
+  </div>
+</div>

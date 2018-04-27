@@ -1,0 +1,96 @@
+@import '../../../../../../styles/burst-responsive';
+@import '../../../../../../styles/burst-text';
+$titleTextSize: burst-text-get-size($textSizesMed, xl);
+$infoTextSizeSmall: burst-text-get-size($textSizesMed, xs);
+.upload-input-container {
+  padding-bottom: 25px;
+  .multi-file-input {
+    display: none;
+  }
+  .disable-selection {
+    opacity: 0.3;
+    pointer-events: none !important;
+  }
+  .ico-add-media {
+    background: url('../../../../../../assets/img/addMediaIcon.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 12px;
+    width: 55px;
+    height: 35px;
+    left: 50px;
+    @include burst-responsive-mobile() {
+      top: 16px;
+      width: 66px;
+      height: 50px;
+      left: 56px;
+    }         
+  }
+  .add-media-btn {
+    @include burst-responsive-mobile() {
+      background: white;
+      border: none;
+      padding: 13px;
+    }    
+    margin: auto;
+    height: 8.5em;
+    line-height: 8.5em;
+    text-align: center;
+    width: 14em;
+    border: 1px solid;
+    cursor: pointer;
+    position: relative;
+    >label {
+      padding-left: 2.5em;
+      padding-right: 2.5em;
+      padding-top: 4em;
+      padding-bottom: 4em;
+      cursor: pointer;
+    }
+    span {      
+      @include burst-text($infoTextSizeSmall,
+      (weight: norm));
+      padding-bottom: 1em;
+      position: relative;
+      top: 12px;
+      @include burst-responsive-mobile() {
+        top: 21px;
+      }      
+    }
+  }
+  .count {
+    @include burst-text($infoTextSizeSmall,
+    (weight: norm));
+    line-height: 10px;
+    top: 69px;
+    width: 100%;
+    position: absolute;
+    @include burst-responsive-mobile() {
+      top: 87px;
+      width: 84%;
+    }    
+  }
+}
+.media-adder-with-preview{
+  height:100px;
+  width:110px;
+}
+.media-adder-with-preview.upload-input-container{
+    padding-bottom:0px;
+  }
+  .media-adder-with-preview.upload-input-container .add-media-btn{
+    
+    height: 7.5em;
+    line-height: 8.5em;
+    text-align: center;
+    width: 9em;
+    border: 1px solid;
+    cursor: pointer;
+    position: relative;
+}
+.media-adder-with-preview.upload-input-container .ico-add-media {
+  top: 16px;
+ 
+  left: 34px;
+}
+

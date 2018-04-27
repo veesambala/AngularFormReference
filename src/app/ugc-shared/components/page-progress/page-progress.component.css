@@ -1,0 +1,10 @@
+.page-progress-bar {
+  background: #efe7e7;
+  border: 0.5px solid #dad2d2;
+  border-radius: 10px;
+}
+
+.page-progress-bar .progress-bar {
+  background: #B0CB42;
+  height: 5px;
+}

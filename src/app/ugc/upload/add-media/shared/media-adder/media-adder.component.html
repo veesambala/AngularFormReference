@@ -1,0 +1,10 @@
+<div class="upload-input-container" [ngClass]="{'media-adder-with-preview':withImage}">
+  <div class="add-media-btn">
+    <label for='fileInputID' [ngClass]='{"disable-selection": selectedFileCount === 5}'>
+        <div class="ico-add-media"></div>
+        <span class="upload-control-text">{{mediaTitle}}</span>
+        <div *ngIf="selectedFileCount > 0" class="count">{{selectedFileCount}} {{displayCountPrompt}}</div>
+    </label>
+  </div>
+  <input #fileInputID id="fileInputID" type="file" name="files" class="multi-file-input" multiple (change)="fileSelected($event)" />
+</div>

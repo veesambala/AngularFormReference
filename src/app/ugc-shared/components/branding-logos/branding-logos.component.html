@@ -1,0 +1,21 @@
+<div class="branding-logos-layout" [ngClass]='{"primary-only": !sponsorLogo, "with-sponsor": sponsorLogo}'>
+  <a *ngIf="primaryLogo"
+     class="primary-logo"
+     [attr.href]="primaryLogo.clickThroughUrl"
+     [class.disabled]="!primaryLogo.clickThroughUrl"
+     target="_blank">
+    <img class="logo-image"
+         src="{{primaryLogo.imageUrl}}"
+         (error)="primaryLogoError()">
+  </a>
+
+  <a *ngIf="sponsorLogo"
+     class="sponsor-logo"
+     [attr.href]="sponsorLogo.clickThroughUrl"
+     [class.disabled]="!sponsorLogo.clickThroughUrl"
+     target="_blank">
+    <img class="logo-image"
+         src="{{sponsorLogo.imageUrl}}"
+         (error)="sponsorLogoError()">
+  </a>
+</div>

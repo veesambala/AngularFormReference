@@ -1,0 +1,14 @@
+@import '../../../../../../styles/burst-responsive';
+@import '../../../../../../styles/burst-text';
+$infoTextSizeSmall: burst-text-get-size($textSizesMed, xs);
+.navigation-link-container {
+  @include burst-text($infoTextSizeSmall, (weight: norm));
+  >a {
+    cursor: pointer;
+    position: relative;
+    left: -12%;
+    &:last-child {
+      left: 12%;
+    }
+  }
+}

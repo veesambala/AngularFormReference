@@ -1,0 +1,9 @@
+@import './ugc/landing/landing.themes';
+@import './ugc/upload/upload.themes';
+@import './ugc-shared/components/ugc-shared.themes';
+
+@mixin app-component-themes($theme) {
+  @include landing-component-themes($theme);
+  @include ugc-shared-component-themes($theme);
+  @include add-media-component-themes($theme);
+}

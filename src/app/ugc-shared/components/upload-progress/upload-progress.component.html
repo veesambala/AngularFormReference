@@ -1,0 +1,35 @@
+<div class="media-container"  [ngClass]='{"preview":mobilePreview}'>
+  <div class="progress-circle">
+    <div class="" *ngIf="fileTypeResult === 'UPLOAD-SUCCESS'">
+        <img class="upload-status-icon" src="assets/icon/upload-tick.svg" alt="close">
+    </div>
+    <div class="" *ngIf="fileTypeResult === 'UPLOAD-ERROR'">
+        <img class="upload-status-icon" src="assets/icon/upload-error.svg" alt="close">
+    </div>    
+    <div *ngIf="fileTypeResult === 'UPLOAD-PROGRESS'">
+      <circle-progress 
+        [percent]="progress"
+        [radius]="30" 
+        [outerStrokeWidth]="4"
+        [innerStrokeWidth]="0" 
+        [space]="3" 
+        [outerStrokeColor]="'#ffffff'"
+        [innerStrokeColor]="'#C7E596'" 
+        [animation]="false" 
+        [animationDuration]="0"
+        [showSubtitle]="false" 
+        [titleFontSize]="12" 
+        [titleColor]="'#78C000'" 
+        [unitsColor] = "'#78C000'"
+        [backgroundColor]="'#404040'" 
+        [backgroundPadding] = "0">
+      </circle-progress>
+    </div>      
+  </div>
+  <div class="media-item-container" mouseleave="onMouseLeave()">
+    <img [src]="previewUrl" *ngIf="isImage" class="items-media" mouseenter="onMouseEnter()" />
+    <video class="items-media" *ngIf="!isImage" [src]="previewUrl" mouseenter="onMouseEnter()" autoPlay muted></video>
+    <img *ngIf="showClose" (click)="removeMedia()" class="media-remove" src="assets/img/cross-icon.svg" alt="close">
+    <div class="size"> {{fileFormatSize(mediaFileObject.blob.size)}} </div>
+  </div>
+</div>

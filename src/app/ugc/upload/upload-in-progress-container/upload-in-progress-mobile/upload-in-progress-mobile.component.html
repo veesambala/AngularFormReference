@@ -1,0 +1,19 @@
+<div class="add-media-div user-info-mobile">
+  <div class="ico-logos">
+    <img src="assets/img/ico-ugc-logo.png" (load)="onImageLoaded($event)" (error)="onImageError($event)">
+    <div class="add-media-text">Almost Done</div>
+  </div>
+  <div class="media">
+
+    <div *ngFor="let file of filesList; let iIdx = index; " class="gallery">
+      <ugc-upload-progress [mobilePreview]="true" [mediaFileObject]="file" [fileIndex]="idx" (evEmitterForRemovingFiles)="fileRemoved($event)"></ugc-upload-progress>
+    </div>
+    <p class="clear"></p>
+  </div>
+
+
+  <div class="media-note">
+    <div class=" media-note-text ">Having Trouble?
+      <span><a href="">Send Us an email</a></span>
+    </div>
+  </div>

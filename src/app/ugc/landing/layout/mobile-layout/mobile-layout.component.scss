@@ -1,0 +1,74 @@
+@import '../../../../../styles/burst-responsive';
+
+.mobile-layout {
+  height: 100%;
+  width: 100%;
+
+  header-background {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include burst-responsive-xs() {
+    .mobile-layout-header.text-only-layout {
+      height: 224px;
+
+      .header-layout {
+        margin-top: 64px;
+      }
+    }
+
+    .mobile-layout-header.image-layout {
+      height: 320px;
+
+      .header-layout {
+        margin-top: 16px;
+      }
+    }
+
+    .powered-by-layout {
+      margin-top: 16px;
+    }
+  }
+
+  @include burst-responsive-sm() {
+    .mobile-layout-header.text-only-layout {
+      height: 256px;
+
+      .header-layout {
+        margin-top: 80px;
+      }
+    }
+
+    .mobile-layout-header.image-layout {
+      height: 352px;
+
+      .header-layout {
+        margin-top: 32px;
+      }
+    }
+
+    .powered-by-layout {
+      margin-top: 32px;
+    }
+  }
+
+  .branding-logos-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(70px);
+  }
+
+  .mobile-layout-body {
+    margin-top: 96px;
+  }
+
+  .powered-by-layout {
+    width: 100%;
+  }
+}

@@ -1,0 +1,1 @@
+export { SplashModule } from './splash.module';

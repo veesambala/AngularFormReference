@@ -1,0 +1,13 @@
+@import './layout/desktop-layout/desktop-layout.component.theme';
+@import './layout/mobile-layout/mobile-layout.component.theme';
+@import './layout/mobile-layout/header-background/header-background.component.theme';
+@import './shared/powered-by/powered-by.component.theme';
+@import './shared/upload/upload.component.theme';
+
+@mixin landing-component-themes($theme) {
+  @include landing-desktop-layout-theme($theme);
+  @include landing-mobile-layout-theme($theme);
+  @include landing-mobile-layout-header-background-theme($theme);
+  @include landing-powered-by-theme($theme);
+  @include landing-upload-prompt-theme($theme);
+}

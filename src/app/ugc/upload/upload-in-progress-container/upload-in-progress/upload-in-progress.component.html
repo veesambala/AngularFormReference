@@ -1,0 +1,22 @@
+<div class='upload-progress-desktop'>
+  <div class="upload-div">
+    <div class="ico-logos">
+      <img [src]="ugcLogoUrl">
+      <span>Almost Done!</span>
+    </div>
+    <div class="media-preview-container">
+      <div *ngFor="let file of filesList; let iIdx = index; " class="media-preview">
+        <ugc-upload-progress [mediaFileObject]="file" [fileIndex]="idx"  [mobilePreview]="false" (evEmitterForRemovingFiles)="fileRemoved($event)"></ugc-upload-progress>
+      </div>
+      <p class="clear"></p>
+    </div>
+  <div class="upload-footer">
+    <a class="cancel-upload burst-theme-accent" (click)="closeUgc()">CANCEL</a>
+  </div>
+  <div class="trouble-style">
+    <span>Having trouble?</span><a class="burst-theme-accent">Send us an email</a>
+  </div>
+</div>
+<div class="right-content">
+  <ugc-desktop-right></ugc-desktop-right>
+</div>

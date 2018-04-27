@@ -1,0 +1,71 @@
+{
+  "ugcC11n": {
+    "returnUrl": "./returnurl",
+    "landing": {
+      "submissionBannerImageUrl": "assets/img/ico-upload-logo.png",
+      "submissionBannerLogo":"partnerSquare"
+    },
+    "branding": {
+      "logos": {
+        "partnerCircular": {
+          "imageUrl": "assets/img/ico-ugc-logo.svg",
+          "clickThroughUrl": "http://mynbc15.com/"
+        },
+        "partnerSquare": {
+          "imageUrl": "assets/img/ico-ugc-logo.png",
+          "clickThroughUrl": "http://mynbc15.com/"
+        },
+        "sponsor": {
+          "imageUrl": "assets/img/adidas.png",
+          "clickThroughUrl": "https://www.adidas.com/us"
+        }
+      },
+      "primaryLogo": "BURST",
+      "sponsorLogo": "NONE"
+    },
+    "theme": {
+      "themeName": "burst-theme-default-light",
+      "enableDesktopIconBackgrounds": true
+    }
+  },
+  "locales": {
+    "default": "en-us",
+    "supported": {
+      "en-us": {
+        "formField": {
+          "postalCode": {
+            "placeholder": "Enter Postal Code",
+            "label": "Postal Code"
+          },
+          "twitterHandle": {
+            "placeholder": "Enter Twitter Account",
+            "label": "Twitter Handle"
+          },
+          "email": {
+            "placeholder": "Enter Email Id",
+            "label": "Email"
+          }
+        },
+        "landingPageUploadPrompt": "Add Your Videos and Photos Now!",
+        "landingPageTitle": "Media Submission",
+        "landingPageTitlePrompt": "Send us your back to school pictures and photos",
+        "landingPageTipText": "Tip: for best results, capture media holding your phone horizontally",
+        "formPageHeadlineText": "This information is used to verify or recognize your submission",
+        "formPageTitle": "Almost Done!",
+        "termsAndConditionsPageTitle": "Terms & Conditions",
+        "termsAndConditionsAutoAcceptText": "By tapping on the Upload button below, you are agreeing to our terms and conditions",
+        "termsAndConditionsManualAcceptText": "I accept these terms",
+        "poweredByText": "Powered by",
+        "uploadText": "UPLOAD",
+        "notNowText": "NOT NOW",
+        "addMediaPrompt": "You can submit up to five media, including one video",
+        "addMediaPageTitle": "Add Media",
+        "nextText": "NEXT",
+        "addMediaNumberDisplay": "of 5 Media",
+        "backText": "BACK",
+        "cancelText": "CANCEL",
+        "mediaTitleText": "Media Title"
+      }
+    }
+  }
+}

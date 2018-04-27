@@ -1,0 +1,14 @@
+<div class="desktop-layout">
+  <ugc-desktop-right></ugc-desktop-right>
+  <div class="upload-div">
+    <div class="upload-body">
+      <div class="submission-prompt-container">
+        <submission-prompt (onPromptTypeSet)="promptTypeSet($event)"></submission-prompt>
+      </div>
+      <div class="upload-container">
+        <upload (onUploadClicked)="uploadClicked()" (onNotNowClicked)="notNowClicked($event)"></upload>
+      </div>
+      <powered-by></powered-by>
+    </div>
+  </div>
+</div>

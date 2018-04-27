@@ -1,0 +1,13 @@
+@import '../../../../../../styles/burst-responsive';
+@import '../../../../../../styles/burst-text';
+.next-button-container {
+  .button-input {
+    @include burst-text-responsive(sm, (sm, md), (weight: bold, link: true));
+    width: 280px;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin: auto;
+    box-shadow: 1px 1px 1px rgba(black, 0.3);
+  }
+}

@@ -1,0 +1,37 @@
+<div class="show-sm">
+  <div class="upload-page-desktop">
+  <div class="upload-div">
+    <div class="add-media-txt">
+      <img [src]="ugcLogo" (load)="onImageLoaded($event)" (error)="onImageError($event)">Add Media</div>
+    <div class="chk-tc">
+      <input type="checkbox" [(ngModel)]='tcConfirmation'>
+    </div>
+    <div class="terms-conditions">
+      <span>I agree to <a (click)="navigateTcPage()" class="tc-link">Terms & Conditions</a></span>
+    </div>
+    <div class="chk-age" >
+      <input type="checkbox"  [(ngModel)]='ageConfirmation'>
+    </div>
+    <div class="confirm-age">
+      <span>I am 13 years of age or older</span>
+    </div>
+
+    <div class="next-btn">
+      <button class="burst-theme-accent-bg" (click)="uploadMedia()">NEXT</button>
+    </div>
+    <div class="back-btn burst-theme-accent">
+        <a (click)="navigate()">BACK</a>
+        <a (click)="cancelled()">CANCEL</a>
+    </div>
+    <div class="page-progress-container">
+        <ugc-page-progress [progressPercent] = '100'></ugc-page-progress>
+    </div>  
+  </div>
+  <div class="right-content">
+    <ugc-desktop-right></ugc-desktop-right>
+  </div>
+</div>
+</div>
+<div class="show-xs">
+
+</div>

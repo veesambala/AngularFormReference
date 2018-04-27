@@ -1,0 +1,5 @@
+@import './add-media/add-media.component.theme';
+
+@mixin upload-component-themes($theme) {
+  @include add-media-component-themes($theme);
+}

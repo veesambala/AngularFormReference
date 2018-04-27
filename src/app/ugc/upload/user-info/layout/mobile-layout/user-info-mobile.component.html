@@ -1,0 +1,51 @@
+<div class="user-info-div user-info-mobile">
+    <div class="add-media-txt">
+      <img [src]="ugcLogo" (load)="onImageLoaded($event)" (error)="onImageError($event)" />
+      <span>Add Media</span>
+    </div>
+    <div class="media-limit-text">
+      <div class="text-center"> This information is used to verify or,</div>
+      <div class="text-center">recognize your submission</div>
+    </div>
+    <div class="user-info-conatiner">
+      <div class="user-info">
+        <input type="text" required [(ngModel)]='ugcUserInfo.name'>
+        <span class="highlight"></span>
+        <label for="full-name" class="placeholder-text">Full Name
+          <sup>*</sup>
+      </label>
+      </div>
+      <div class="user-info">
+        <input type="text" required [(ngModel)]='ugcUserInfo.email'>
+        <span class="highlight"></span>
+        <label for="email" class="placeholder-text">Email
+           <sup>*</sup>
+       </label>
+      </div>
+      <div class="user-info">
+        <input type="text" required [(ngModel)]='ugcUserInfo.title'>
+        <span class="highlight"></span>
+        <label for="media-title" class="placeholder-text">Media Title
+          <sup>*</sup>
+      </label>
+      </div>
+      <div class="user-info">
+        <label class="required-text"><sup>*</sup>Required Fields</label>
+      </div>
+      <div class="hr-line"></div>
+      <div class="tc">
+        <input type="checkbox" [(ngModel)]='tcConfirmation' (change)="tcSelection()">
+        <div class="tc-text">
+          <span [ngClass]='{"tc-error": tcNotSelected}'>I have viewed and accept the</span><br/>
+          <span [ngClass]='{"tc-error": tcNotSelected}'>Terms & Conditions</span>
+        </div>
+        <p class="clear"></p>
+      </div>
+    </div>
+    <div class="upload-div text-center">
+      <input class="upload-btn burst-theme-accent-bg" type="button" (click)="handleNext()" value="UPLOAD">
+    </div>
+    <div class="page-progress-container">
+      <ugc-page-progress [progressPercent]='100'></ugc-page-progress>
+    </div>
+  </div>

@@ -1,0 +1,16 @@
+@import '../../../../../../styles/burst-theme';
+@import '../../../../../../styles/burst-responsive';
+
+@mixin next-button-theme($theme) {
+
+  $secondaryPalette: burst-theme-palette($theme, sec);
+  $secondaryColor: burst-theme-palette-color($secondaryPalette);
+  $secondaryText: burst-theme-palette-text($secondaryPalette);
+
+  .next-button-container {
+    .next-button {
+      color: $secondaryText;
+      background-color: $secondaryColor;
+    }
+  }
+}

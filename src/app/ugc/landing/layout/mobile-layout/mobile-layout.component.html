@@ -1,0 +1,19 @@
+<div class="mobile-layout">
+  <div class="mobile-layout-header" [ngClass]="{'text-only-layout': submissionPromptType === 'TEXT_ONLY', 'image-layout': submissionPromptType === 'IMAGE' }">
+    <header-background>
+      <div class="header-layout">
+        <submission-prompt (onPromptTypeSet)="promptTypeSet($event)"></submission-prompt>
+        <div class="branding-logos-container">
+          <ugc-branding-logos></ugc-branding-logos>
+        </div>
+      </div>
+    </header-background>
+  </div>
+
+  <div class="mobile-layout-body">
+    <upload (onUploadClicked)="uploadClicked()" (onNotNowClicked)="notNowClicked($event)"></upload>
+    <div class="powered-by-layout">
+      <powered-by></powered-by>
+    </div>
+  </div>
+</div>

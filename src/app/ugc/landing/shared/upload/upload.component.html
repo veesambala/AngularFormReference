@@ -1,0 +1,14 @@
+<div class="upload-prompt-container">
+  <div class="upload-prompt-layout">
+    <div class="prompt-text promptText" >{{promptText}}</div>
+
+    <div class="upload-button-container button-container">
+      <div class="upload-button button-input" (click)="uploadClick()">{{uploadText}}</div>
+    </div>
+
+    <div *ngIf="notNowShown"
+         class="not-now-container button-container">
+      <div class="not-now-button button-input" (click)="notNowClick()">{{notNowText}}</div>
+    </div>
+  </div>
+</div>

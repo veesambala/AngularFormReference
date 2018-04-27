@@ -1,0 +1,80 @@
+.desktop-background {
+  width: 100vw;
+  height: 100vh;
+
+  .arc {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    .gradient {
+      position: absolute;
+      right: 0;
+      height: 100%;
+      width: 30%;
+
+      .gradient-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .gradient-pattern {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: url('./background-pattern.png') no-repeat;
+          background-size: cover;
+          background-position: 50% 50%;
+        }
+      }
+    }
+
+    .icons {
+      position: absolute;
+      right: 0;
+      height: 100%;
+      width: 21%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .icons-container {
+        width: 320px;
+        height: 560px;
+        padding-bottom: 64px;
+
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .shape-container {
+      height: 100%;
+      width: 100%;
+
+      .shape {
+        position: absolute;
+        width: 60vw;
+        height: 150vh;
+        top: 50%; left: 50%;
+        transform: translate(-50%,-50%);
+        border-bottom-right-radius: 50%;
+        border-top-right-radius: 50%;
+      }
+    }
+  }
+
+  .logos-container {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: calc(20vw - 150px);
+    top: calc(50vh - 150px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,19 @@
+.upload-div,
+.right-content {
+  width: 49%;
+  display: inline-block;
+}
+
+.right-content {
+  position: absolute;
+  height: 100%;
+  right: 0px;
+}
+
+.upload-page-desktop {
+  min-width: 1280px;
+}
+
+.mobile-view {
+  height: 100vh;
+}

@@ -1,0 +1,15 @@
+@import '../../../../../../styles/burst-theme';
+@import '../../../../../../styles/burst-responsive';
+
+@mixin navigation-link-theme($theme) {
+
+  $secondaryPalette: burst-theme-palette($theme, sec);
+  $secondaryColor: burst-theme-palette-color($secondaryPalette);
+  $secondaryText: burst-theme-palette-text($secondaryPalette);
+
+  .navigation-link-container {
+    >a {
+    color: $secondaryColor;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+<div class="show-sm">
+<div class="upload-page-desktop">
+        <div class="upload-div">
+                <div class="add-media-txt">
+                        <img [src]="ugcLogo" (load)="onImageLoaded($event)" (error)="onImageError($event)" /> Add Media</div>
+                <div class="media-limit-text">
+                        <span>This information is used to verify or,</span>
+                        <br>
+                        <span>recognize your submission</span>
+                </div>
+        
+                <form role="form" #myForm="ngForm" >
+                        <div class="user-info">
+                                <div class="form-group">
+                                        <label>Full Name <span>*</span></label>
+                                        <br>
+                                        <input name="username" class="form-control inputField" #username="ngModel" [(ngModel)]='ugcUserInfo.name' type="text"
+                                           required >
+                                       
+                                </div>
+                        </div>
+                        <div class="user-info">
+                                <div class="form-group">
+                                        <label>Email <span>*</span></label>
+                                        <br>
+                                        <input type="text" class="form-control inputField" [(ngModel)]="ugcUserInfo.email" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                                             name="useremail" #email="ngModel" required>
+                                        <div *ngIf="email.errors && (email.dirty || email.touched)" class="error">
+                                                <div *ngIf="!email.errors.required" class="alert" (vp-in-view)="handlerFunction()"> please enter the valid email</div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="user-info">
+                                <div class="form-group">
+                                        <label>Title</label>
+                                        <br>
+                                        <input class="form-control inputField" [(ngModel)]='ugcUserInfo.title' name="usertitle" #title="ngModel" type="text">
+
+                                </div>
+                        </div>
+   
+        <div class="next-btn">
+                <button class="burst-theme-accent-bg" [disabled]="!myForm.valid" (click)="handleNext()">NEXT</button>
+        </div>
+</form>
+
+        <div class="back-btn burst-theme-accent">
+                <a (click)="handleCancelBackOperation(false)">BACK</a>
+                <a (click)="handleCancelBackOperation(true)">CANCEL</a>
+        </div>
+        <div class="page-progress-container">
+                <ugc-page-progress [progressPercent]='75'></ugc-page-progress>
+        </div>
+</div>
+<div class="right-content">
+        <ugc-desktop-right></ugc-desktop-right>
+</div>
+</div>
+
+</div>
+
+
+<div class="show-xs">
+        <ugc-upload-user-info-mobile></ugc-upload-user-info-mobile>
+</div>

@@ -1,0 +1,64 @@
+.right-content{
+    position: absolute;
+    height: 100%;
+    right: 0px;
+    overflow:hidden;
+}
+.upload-progress-desktop{
+  display:flex;
+}
+.mobile-view{
+    height: 100vh;
+}
+
+.upload-div{
+   text-align:center;
+    margin:5% 15%;
+    z-index:1;
+}
+
+.media-preview-container .media-item {
+    margin-left: 1%;
+}
+
+.media-preview-container .media-preview {
+    float: left;
+    padding-left: 2px; 
+}
+.media-preview-container {
+    margin-left: 10%;
+    width:450px;
+}
+.ico-logos{
+    position: relative;
+    margin-bottom: 5%;
+}
+.ico-logos >span{
+    position: relative;
+    top: -21px;
+    left: 10px;
+    font-size: 2em;
+    color:black;
+}
+.ico-logos>img:first-child{
+  /* margin-left: 355px; */
+  height: 50px;
+  width:50px;
+  margin-top:55px;
+  border-radius: 50%;
+
+}
+.upload-footer {
+    margin-top: 4%;
+}
+
+.cancel-upload  {
+    /* margin-left: 410px; */
+    cursor: pointer;
+}
+
+.trouble-style {
+
+    margin-top: 4%;
+    font-size:14px;
+}

@@ -1,0 +1,21 @@
+@import '../../../../../../styles/burst-theme';
+@import '../../../../../../styles/burst-responsive';
+
+@mixin media-adder-control-theme($theme) {
+  $secondaryPalette: burst-theme-palette($theme, sec);
+  $foregroundPalette: burst-theme-palette($theme, fg);
+  $secondaryColor: burst-theme-palette-color($secondaryPalette);
+  $foregroundText: burst-theme-palette-text($foregroundPalette, ter);
+    
+  @include burst-responsive-md-xl() {
+    .add-media-btn {
+      border-color: $secondaryColor !important;
+    }
+  }
+  .upload-control-text {
+    color: $secondaryColor;
+  }
+  .count {
+    color: $foregroundText;
+  }  
+}

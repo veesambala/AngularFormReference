@@ -1,0 +1,9 @@
+<div class="media-container" [ngClass]='{"preview": mobilePreview}'>
+  <div class="media-item-container" (mouseleave)="onMouseLeave()">
+    <img [src]="previewUrl" *ngIf="isImage" class="items-media" (mouseenter)="onMouseEnter()">
+    <video class="items-media" *ngIf="!isImage" [src]="previewUrl" autoPlay muted></video>
+
+    <img *ngIf="showClose" (click)="removeMedia()" class="media-remove" src="assets/img/cross-icon.svg" alt="close">
+    <div class="size"> {{fileFormatSize(mediaFileObject.blob.size)}} </div>
+  </div>
+</div>

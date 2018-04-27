@@ -1,0 +1,29 @@
+.primary-color{
+   color: #15AA85;
+   background-color: #ffffff;
+   text-align: center;
+}
+
+.block {
+    padding: 20px;
+    background-color: white;
+    border-color:black;
+    text-align:center;
+}
+.thirteen{
+    background-color: #15AA85;
+     color: #ffffff;
+}
+.welcome{
+    color:black
+}
+.under-thirteen{
+    background-color: white;
+    border-color: #15AA85;
+    color: black
+
+}
+button{
+    margin-left:20px;
+    white-space: nowrap;
+}

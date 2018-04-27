@@ -1,0 +1,18 @@
+@import '../../../../../../styles/burst-theme';
+@import '../../../../../../styles/burst-responsive';
+
+@mixin add-media-prompt-theme($theme) {
+  $foregroundPalette: burst-theme-palette($theme, fg);
+  $foregroundText: burst-theme-palette-text($foregroundPalette, ter);
+  $primaryPalette: burst-theme-palette($theme);
+  $primaryText: burst-theme-palette-text($primaryPalette);
+    
+  .media-limit-text {
+    @include burst-responsive-mobile() {
+      color: $primaryText;
+    }
+    @include burst-responsive-desktop() {
+      color: $foregroundText;
+    }
+  }
+}

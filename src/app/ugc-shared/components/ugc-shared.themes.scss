@@ -1,0 +1,7 @@
+@import './desktop-background/desktop-background.component.theme';
+@import './submission-prompt/submission-prompt.component.theme';
+
+@mixin ugc-shared-component-themes($theme) {
+  @include ugc-shared-desktop-background-theme($theme);
+  @include ugc-shared-submission-prompt-theme($theme);
+}

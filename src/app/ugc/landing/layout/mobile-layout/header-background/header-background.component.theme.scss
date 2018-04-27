@@ -1,0 +1,13 @@
+@import '../../../../../../styles/burst-theme';
+
+@mixin landing-mobile-layout-header-background-theme($theme) {
+  $primaryPalette: burst-theme-palette($theme);
+  $primaryLightColor: burst-theme-palette-color($primaryPalette, light);
+  $primaryDarkColor: burst-theme-palette-color($primaryPalette, dark);
+
+  .header-background-layout {
+    .background-gradient {
+      background: radial-gradient(#{$primaryLightColor}, #{$primaryDarkColor});
+    }
+  }
+}

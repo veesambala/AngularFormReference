@@ -1,0 +1,42 @@
+@import "../../../../../styles/burst-responsive";
+@import '../../../../../styles/burst-text';
+
+.desktop-layout {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  ugc-desktop-right {
+    position: absolute;
+    right: 0;
+    display: block;
+    height: 100%;
+  }
+
+  .upload-div {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .upload-body {
+      width: 100%;
+
+      .submission-prompt-container {
+        padding-bottom: 48px;
+      }
+
+      .logos-container {
+        padding-bottom: 48px;
+      }
+
+      .upload-container {
+        padding-bottom: 48px;
+      }
+    }
+  }
+}

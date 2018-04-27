@@ -1,0 +1,50 @@
+@import './_colors';
+
+$burst-theme-default-light: (
+  primary: (
+    base: #1B5F74,
+    dark: #0c4358,
+    light: #2a7a90,
+    primaryText: $light-primary-text,
+    secondaryText: $light-secondary-text,
+    tertiaryText: $light-tertiary-text,
+    disabledText: $light-disabled-text,
+    dividers: $light-dividers
+  ),
+  secondary: (
+    base: #15AA85,
+    dark: #0F775E,
+    light: #5AC5A9,
+    primaryText: $light-primary-text,
+    secondaryText: $light-secondary-text,
+    tertiaryText: $light-tertiary-text,
+    disabledText: $light-disabled-text,
+    dividers: $light-dividers
+  ),
+  tertiary: (
+    base: #6CB942,
+    dark: #39860F,
+    light: #86D35C,
+    primaryText: $dark-primary-text,
+    secondaryText: $dark-secondary-text,
+    tertiaryText: $dark-tertiary-text,
+    disabledText: $dark-disabled-text,
+    dividers: $dark-dividers
+  ),
+  background: (
+    base: white,
+    primaryText: $dark-primary-text,
+    secondaryText: $dark-secondary-text,
+    tertiaryText: $dark-tertiary-text,
+    disabledText: $dark-disabled-text,
+    dividers: $dark-dividers
+  ),
+  foreground: (
+    base: white,
+    primaryText: $dark-primary-text,
+    secondaryText: $dark-secondary-text,
+    tertiaryText: $dark-tertiary-text,
+    disabledText: $dark-disabled-text,
+    dividers: $dark-dividers
+  )
+)

@@ -1,0 +1,54 @@
+.ico-logos{
+    text-align: center;
+}
+.ico-logos>img {
+    margin-top: 10%;
+    border-radius: 50%;
+    height: 35px;
+  }
+  
+  .add-media-text {
+    font-size: 16px;
+    display: inline-block;
+    color: white;
+    position: relative;
+    top: -12px;
+    left: 10px;
+  }
+  
+
+  .gallery {
+    float: left;
+    width: 43%;
+     height: 150px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+  .gallery img {
+    height: 100%;
+    width: 100%;
+ }
+  
+  .media-note-text {
+    margin-top: 2px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+  }
+  
+  .media-note {
+    margin-top: 4%;
+    margin-bottom: 2%;
+  }
+  
+
+  .media {
+    margin-top: 0%;
+    overflow: scroll;
+    height: 480px;
+  }
+  
+  a {
+    color: white;
+  }

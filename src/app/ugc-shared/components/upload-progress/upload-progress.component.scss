@@ -1,0 +1,53 @@
+.media-container {
+  border: 1px solid rgba(128, 128, 128, 0.15);
+  text-align: center;
+  display: table;
+  overflow: hidden;
+  margin: 7px;
+  .media-item-container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    .items-media {
+      height: 120px;
+      width: 130px;
+    }
+  }
+  .progress-circle {
+    position: absolute;
+    top: auto;
+    display: block;
+    z-index: 2;
+    margin-top: 36px;
+    margin-left: 50px;
+  }
+}
+
+.upload-status-icon {
+  height: 42px;
+  width: 42px;
+}
+
+.size {
+  height: 20px;
+  margin-top: -25px;
+  margin-left: 40%;
+  position: relative;
+  color: white;
+  font-size: 14px;
+}
+
+.preview.media-container .media-item-container {
+  .items-media {
+    height: 145px;
+    width: 100%;
+  }
+  .media-remove {
+    height: 20px;
+    width: 20px;
+    float: right !important;
+    position: relative!important;
+    margin-top: -90%;
+    margin-right: 3%;
+  }
+}
